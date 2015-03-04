@@ -1,0 +1,5 @@
+include_recipe 'rails-env::configure_rails-env'
+include_recipe 'rails-env::configure_ruby_rbenv'
+include_recipe 'rails-env::configure_mysql'
+include_recipe 'rails-env::configure_rails'
+include_recipe 'rails-env::configure_service'

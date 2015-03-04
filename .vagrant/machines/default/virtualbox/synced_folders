@@ -1,0 +1,1 @@
+{"virtualbox":{"/vagrant":{"guestpath":"/vagrant","hostpath":"/Users/k2works/GoogleDrive/Projects/github.com/hirayama/rails-cookbook","disabled":false},"v-csc-1":{"id":"v-csc-1","guestpath":"/tmp/vagrant-chef-3/chef-solo-1/cookbooks","hostpath":"/Users/k2works/.berkshelf/vagrant-berkshelf/shelves/berkshelf20150304-26377-y7n2e5-default","disabled":false}}}

@@ -1,0 +1,18 @@
+[mysqld]
+datadir=/var/lib/mysql
+socket=/var/lib/mysql/mysql.sock
+user=mysql
+# Disabling symbolic-links is recommended to prevent assorted security risks
+symbolic-links=0
+
+[mysqld_safe]
+log-error=/var/log/mysqld.log
+pid-file=/var/run/mysqld/mysqld.pid
+
+default-character-set=utf8
+skip-character-set-client-handshake
+
+innodb_file_per_table
+innodb_buffer_poor_size=64M
+innodb_log_file_size=16M
+innodb_log_files_in_group=2

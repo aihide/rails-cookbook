@@ -1,8 +1,10 @@
 #
-# Cookbook Name:: rails-env
+# Cookbook Name:: rails-env-env
 # Recipe:: default
 #
-# Copyright 2015, YOUR_COMPANY_NAME
+# Copyright 2014, YOUR_COMPANY_NAME
 #
 # All rights reserved - Do Not Redistribute
 #
+include_recipe 'rails-env::setup'
+include_recipe 'rails-env::configure'
