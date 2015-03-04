@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: rails-cookbook
+# Cookbook Name:: rails-env
 # Recipe:: default
 #
 # Copyright 2015, YOUR_COMPANY_NAME

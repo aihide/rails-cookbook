@@ -1,6 +1,6 @@
 require_relative '../spec_helper'
 
-describe 'rails-cookbook::default' do
+describe 'rails-env::default' do
   subject { ChefSpec::Runner.new.converge(described_recipe) }
 
   # Write quick specs using `it` blocks with implied subjects
