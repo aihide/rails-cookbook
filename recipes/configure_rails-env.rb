@@ -14,10 +14,19 @@ user 'deploy' do
   action :create
 end
 
-group 'wheel' do
-  action [:modify]
-  members ['deploy']
-  append true
+case platform?
+  when 'ubuntu'
+    group 'vagrant' do
+      action [:modify]
+      members ['deploy']
+      append true
+    end
+  when 'centos'
+    group 'wheel' do
+      action [:modify]
+      members ['deploy']
+      append true
+    end
 end
 
 #公開鍵の登録

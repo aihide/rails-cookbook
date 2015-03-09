@@ -5,6 +5,7 @@ license          'All rights reserved'
 description      'Installs/Configures rails-env'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
 version          '0.1.0'
+depends 'apt', '~> 2.6.1'
 depends 'yum', '~> 3.5.3'
 depends 'yum-epel', '~> 0.6.0'
 depends 'nginx', '~> 2.7.4'
@@ -12,4 +13,3 @@ depends 'rbenv', '~> 1.7.1'
 depends 'mysql', '~> 5.3.6'
 depends 'database', '~> 2.3.1'
 depends 'sudo','~> 2.7.1'
-
