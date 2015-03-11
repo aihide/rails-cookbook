@@ -1,14 +1,8 @@
 DEPENDENCIES
-  database
-  mysql
-  nginx
+  chef-dk
   rails-env
     path: .
     metadata: true
-  rbenv
-  sudo
-  yum
-  yum-epel
 
 GRAPH
   apt (2.6.1)
@@ -16,6 +10,8 @@ GRAPH
   bluepill (2.3.1)
     rsyslog (>= 0.0.0)
   build-essential (2.1.3)
+  chef-dk (3.0.0)
+    dmg (~> 2.2)
   chef-sugar (2.5.0)
   chef_handler (1.1.6)
   database (2.3.1)
@@ -53,6 +49,7 @@ GRAPH
     openssl (~> 4.0.0)
   rails-env (0.1.0)
     apt (~> 2.6.1)
+    chef-dk (~> 3.0.0)
     database (~> 2.3.1)
     mysql (~> 5.3.6)
     nginx (~> 2.7.4)
