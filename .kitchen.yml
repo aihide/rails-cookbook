@@ -1,6 +1,9 @@
 ---
 driver:
-  name: vagrant
+  name: docker_cli
+  require_chef_omnibus: false
+  run_command:
+    - curl -L https://www.chef.io/chef/install.sh | bash
 
 provisioner:
   name: chef_zero
@@ -12,5 +15,6 @@ platforms:
 suites:
   - name: default
     run_list:
-      - recipe[rails-env::default]
+      - recipe[rails-env::setup]
+      - recipe[rails-env::configure]
     attributes:
